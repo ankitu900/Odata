@@ -1,0 +1,70 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+# Ignore build outputs
+bin/
+obj/
+*.dll
+*.exe
+*.app
+*.log
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+
+# Visual Studio settings
+*.vs/
+.vs/
+
+# Rider
+.idea/
+
+# ASP.NET & EF
+appsettings.*.json
+appsettings.Development.json
+secrets.json
+
+# Entity Framework Migrations snapshots (optional to ignore)
+# Uncomment if you want to ignore migration history files
+# Migrations/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Other build system files
+project.assets.json
+project.nuget.cache
+*.deps.json
+
+# Logs
+*.log
+logs/
+*.tlog
+
+# DotNet CLI
+.dotnet/
+*.dbmdl
+
+# SQL/EF files
+*.mdf
+*.ldf
+
+# Mac/Linux artifacts
+.DS_Store
+*.swp
+
+# Windows artifacts
+Thumbs.db
+desktop.ini
