@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Odata.Migrations
+namespace Entities.Business.Migrations
 {
     /// <inheritdoc />
     public partial class mig1 : Migration

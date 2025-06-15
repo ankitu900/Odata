@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Odata.Entities;
 
-namespace Odata
+namespace Entities.Business
 {
     public class AppDbContext : DbContext
     {
