@@ -12,11 +12,11 @@ using Entities.Business.Services;
 
 namespace Odata.Controllers;
 
-public class ProductsController : ODataController
+public class ProductController : ODataController
 {
     private readonly IProduct _productService;
 
-    public ProductsController(IProduct productService)
+    public ProductController(IProduct productService)
     {
         _productService = productService;
     }

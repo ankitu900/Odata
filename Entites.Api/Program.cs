@@ -16,7 +16,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IProduct, ProductService>(); // Register the service here
 // OData setup
 var odataBuilder = new ODataConventionModelBuilder();
-odataBuilder.EntitySet<Product>("Products");
+
+odataBuilder.EntitySet<Product>("Product");
 
 builder.Services.AddControllers().AddOData(opt =>
     opt.AddRouteComponents("odata", odataBuilder.GetEdmModel())
@@ -29,7 +30,6 @@ builder.Services.AddControllers().AddOData(opt =>
 
 var app = builder.Build();
 
-app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
